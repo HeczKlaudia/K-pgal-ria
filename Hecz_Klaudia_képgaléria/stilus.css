@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+body {
+  background-color: whitesmoke;
+}
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+}
+
+section {
+  display: grid;
+  grid-template-areas: "b f j";
+  grid-template-columns: 50px auto 50px;
+}
+
+#balNyil {
+  grid-area: b;
+}
+
+#fokep {
+  grid-area: f;
+}
+
+#jobbNyil {
+  grid-area: j;
+}
+
+article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h3,
+p {
+  text-align: center;
+}
