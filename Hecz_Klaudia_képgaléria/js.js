@@ -38,11 +38,11 @@ $(function () {
 
   kepadat.forEach(function (elem, index) {
     const ujElem = sablonElem.clone().appendTo(szuloElem);
-    const ujKartya = new Kartya(ujElem, elem, index);
+    const ujKartya = new Kiskartya(ujElem, elem, index);
   });
 
   const ujElem = sablonElem.clone().appendTo(fokepSzulo);
-  const nagyKartya = new Kartya(ujElem, kepadat[aktIndex], aktIndex);
+  const nagyKartya = new Kartya(ujElem, kepadat[0]);
 
   sablonElem.remove();
 

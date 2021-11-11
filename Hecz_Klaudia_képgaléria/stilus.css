@@ -2,6 +2,18 @@
 
 body {
   background-color: whitesmoke;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+body:hover {
+  background-color: rgb(216, 224, 213);
+}
+
+main:hover {
+  background-color: rgb(243, 255, 239);
 }
 
 main {
@@ -10,12 +22,17 @@ main {
   margin: auto;
   padding: 10px;
   background-color: white;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
 }
 
 section {
   display: grid;
   grid-template-areas: "b f j";
   grid-template-columns: 50px auto 50px;
+  padding: 5px;
 }
 
 #balNyil {
@@ -34,6 +51,7 @@ article {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+  padding: 5px;
 }
 
 img {
@@ -44,4 +62,10 @@ h1,
 h3,
 p {
   text-align: center;
+}
+
+.kartya {
+  border: black 1px solid;
+  padding: 5px;
+  background-color: white;
 }
